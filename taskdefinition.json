@@ -1,0 +1,153 @@
+{
+    "family": "laradocktask",
+    "taskRoleArn": "",
+    "executionRoleArn": null,
+    "containerDefinitions": [
+        {
+            "name": "laradockcontainer",
+            "image": "",
+            "repositoryCredentials": {
+                "credentialsParameter": ""
+            },
+            "cpu": 1024,
+            "memory": 128,
+            "memoryReservation": 0,
+            "links": [
+                ""
+            ],
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "entryPoint": [
+                ""
+            ],
+            "command": [
+                ""
+            ],
+            "environment": [
+                {
+                    "name": "",
+                    "value": ""
+                }
+            ],
+            "environmentFiles": null,
+            "mountPoints": [
+                {
+                    "sourceVolume": "",
+                    "containerPath": "",
+                    "readOnly": true
+                }
+            ],
+            "volumesFrom": [
+                {
+                    "sourceContainer": "",
+                    "readOnly": true
+                }
+            ],
+            "linuxParameters": null,
+            "secrets": [
+                {
+                    "name": "",
+                    "valueFrom": ""
+                }
+            ],
+            "startTimeout": 0,
+            "stopTimeout": 0,
+            "hostname": "",
+            "user": "",
+            "workingDirectory": "",
+            "disableNetworking": true,
+            "privileged": true,
+            "readonlyRootFilesystem": true,
+            "dnsServers": [
+                ""
+            ],
+            "dnsSearchDomains": [
+                ""
+            ],
+            "extraHosts": [
+                {
+                    "hostname": "",
+                    "ipAddress": ""
+                }
+            ],
+            "dockerSecurityOptions": [
+                ""
+            ],
+            "interactive": true,
+            "pseudoTerminal": true,
+            "dockerLabels": {
+                "KeyName": ""
+            },
+            "ulimits": [
+                {
+                    "name": "nproc",
+                    "softLimit": 0,
+                    "hardLimit": 0
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "splunk",
+                "options": {
+                    "KeyName": ""
+                },
+                "secretOptions": [
+                    {
+                        "name": "",
+                        "valueFrom": ""
+                    }
+                ]
+            },
+            "healthCheck": null,
+            "systemControls": [
+                {
+                    "namespace": "",
+                    "value": ""
+                }
+            ],
+            "resourceRequirements": null,
+            "firelensConfiguration": {
+                "type": "fluentd",
+                "options": {
+                    "KeyName": ""
+                }
+            }
+        }
+    ],
+    "volumes": [],
+    "placementConstraints": [
+        {
+            "type": "memberOf",
+            "expression": ""
+        }
+    ],
+    "requiresCompatibilities": [
+        "EXTERNAL"
+    ],
+    "cpu": "",
+    "memory": "",
+    "tags": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "pidMode": "task",
+    "ipcMode": "task",
+    "proxyConfiguration": null,
+    "inferenceAccelerators": [
+        {
+            "deviceName": "",
+            "deviceType": ""
+        }
+    ],
+    "ephemeralStorage": {
+        "sizeInGiB": 0
+    },
+    "runtimePlatform": null
+}

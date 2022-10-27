@@ -10,7 +10,7 @@ env:
   ECR_REPOSITORY: laradock
   ECS_SERVICE: laradockSVC                 # set this to your Amazon ECS service name
   ECS_CLUSTER: laradock                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: laradocktask:7  # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: taskdefinition.json  # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: laradockcontainer           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition

@@ -9,12 +9,10 @@
             "repositoryCredentials": {
                 "credentialsParameter": ""
             },
-            "cpu": 1024,
-            "memory": 128,
-            "memoryReservation": 0,
-            "links": [
-                ""
-            ],
+            "cpu": "1024",
+            "memory": "128",
+            "memoryReservation": null,
+            "links": null,
             "portMappings": [
                 {
                     "containerPort": 80,
@@ -23,129 +21,57 @@
                 }
             ],
             "essential": true,
-            "entryPoint": [
-                ""
-            ],
-            "command": [
-                ""
-            ],
-            "environment": [
-                {
-                    "name": "",
-                    "value": ""
-                }
-            ],
+            "entryPoint": null,
+            "command": null,
+            "environment": [],
             "environmentFiles": null,
-            "mountPoints": [
-                {
-                    "sourceVolume": "",
-                    "containerPath": "",
-                    "readOnly": true
-                }
-            ],
-            "volumesFrom": [
-                {
-                    "sourceContainer": "",
-                    "readOnly": true
-                }
-            ],
+            "mountPoints": [],
+            "volumesFrom": [],
             "linuxParameters": null,
-            "secrets": [
-                {
-                    "name": "",
-                    "valueFrom": ""
-                }
-            ],
-            "startTimeout": 0,
-            "stopTimeout": 0,
-            "hostname": "",
-            "user": "",
-            "workingDirectory": "",
+            "secrets": null,
+            "startTimeout": null,
+            "stopTimeout": null,
+            "hostname": null,
+            "user": null,
+            "workingDirectory": null,
             "disableNetworking": true,
             "privileged": true,
             "readonlyRootFilesystem": true,
-            "dnsServers": [
-                ""
-            ],
-            "dnsSearchDomains": [
-                ""
-            ],
-            "extraHosts": [
-                {
-                    "hostname": "",
-                    "ipAddress": ""
-                }
-            ],
-            "dockerSecurityOptions": [
-                ""
-            ],
+            "dnsServers": null,
+            "dnsSearchDomains": null,
+            "extraHosts": null,
+            "dockerSecurityOptions": null,
             "interactive": true,
             "pseudoTerminal": true,
-            "dockerLabels": {
-                "KeyName": ""
-            },
-            "ulimits": [
-                {
-                    "name": "nproc",
-                    "softLimit": 0,
-                    "hardLimit": 0
-                }
-            ],
+            "dockerLabels": null,
+            "ulimits": null,
             "logConfiguration": {
-                "logDriver": "splunk",
+                "logDriver": "awslogs",
+                "secretOptions": null,
                 "options": {
-                    "KeyName": ""
-                },
-                "secretOptions": [
-                    {
-                        "name": "",
-                        "valueFrom": ""
-                    }
-                ]
+                    "awslogs-group": "/ecs/laradocktask",
+                    "awslogs-region": "eu-central-1",
+                    "awslogs-stream-prefix": "ecs"
+                }
             },
             "healthCheck": null,
-            "systemControls": [
-                {
-                    "namespace": "",
-                    "value": ""
-                }
-            ],
+            "systemControls": null,
             "resourceRequirements": null,
-            "firelensConfiguration": {
-                "type": "fluentd",
-                "options": {
-                    "KeyName": ""
-                }
-            }
+            "firelensConfiguration": null
         }
     ],
     "volumes": [],
-    "placementConstraints": [
-        {
-            "type": "memberOf",
-            "expression": ""
-        }
-    ],
+    "placementConstraints": [],
     "requiresCompatibilities": [
         "EXTERNAL"
     ],
     "cpu": "",
     "memory": "",
-    "tags": [
-        {
-            "key": "",
-            "value": ""
-        }
-    ],
+    "tags": [],
     "pidMode": "task",
     "ipcMode": "task",
     "proxyConfiguration": null,
-    "inferenceAccelerators": [
-        {
-            "deviceName": "",
-            "deviceType": ""
-        }
-    ],
+    "inferenceAccelerators": null,
     "ephemeralStorage": {
         "sizeInGiB": 0
     },
